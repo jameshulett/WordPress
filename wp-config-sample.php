@@ -38,7 +38,7 @@ define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
 /** wp-cron is checked at every log in. We would rather use "real" cron
- * cron command to schedule: /usr/bin/php -q wp-cron.php >/dev/null 2>&1
+ * cron command to schedule: /usr/bin/php -q /path/to/wp-cron.php >/dev/null 2>&1
  */
 define('DISABLE_WP_CRON', 'true');
 
