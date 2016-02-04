@@ -92,3 +92,5 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+/** We need to disable xmlrpc in a mannor that precludes plugins */
+add_filter('xmlrpc_enabled', '__return_false');
