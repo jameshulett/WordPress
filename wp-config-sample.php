@@ -37,6 +37,11 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+/** wp-cron is checked at every log in. We would rather use "real" cron
+ * cron command to schedule: /usr/bin/php -q wp-cron.php >/dev/null 2>&1
+ */
+define('DISABLE_WP_CRON', 'true');
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
