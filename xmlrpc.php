@@ -10,6 +10,7 @@
  *
  * @var bool
  */
+die("This service is currently disabled.");
 define('XMLRPC_REQUEST', true);
 
 // Some browser-embedded clients send cookies. We don't want them.
