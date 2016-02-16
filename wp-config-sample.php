@@ -41,6 +41,10 @@ define('DB_COLLATE', '');
  * cron command to schedule: /usr/bin/php -q /path/to/wp-cron.php >/dev/null 2>&1
  */
 define('DISABLE_WP_CRON', 'true');
+/** Disable theme and plugin editing from the admin panel */
+define('DISALLOW_FILE_EDIT',true);
+/** Disable theme and plugin installation */
+define('DISALLOW_FILE_MODS', true );
 
 /**#@+
  * Authentication Unique Keys and Salts.
